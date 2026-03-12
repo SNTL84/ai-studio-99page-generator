@@ -1,0 +1,38 @@
+# DesiDevloper.com — Cursor Project Rules v3.0
+
+## Stack
+- Pure HTML5 + CSS3 + Vanilla JavaScript ONLY
+- NO React, Vue, Svelte, Angular, or any JS framework
+- NO Tailwind, Bootstrap, or any CSS framework
+- NO npm packages for frontend — Node.js only for build scripts
+- Hosted on Hostinger Business (shared hosting — no server-side code)
+
+## Brand Colors
+- Primary:    #1E40AF  (blue)
+- Accent:     #F59E0B  (amber/gold)
+- Text:       #111827  (near-black)
+- Background: #FFFFFF  (white)
+- WhatsApp:   #25D366  (green)
+- LinkedIn:   #0A66C2  (blue)
+
+## Architecture
+- ALL service pages: /services/[slug].html
+- Template: /services/service-template.html
+- Data file: /data/services-data.json
+- Generator: /scripts/generate-pages.js
+- Nav and footer: injected at BUILD TIME
+
+## Every Service Page: 13 Sections
+1. Navigation
+2. Hero
+3. Problem
+4. Solution
+5. Process
+6. Timeline
+7. What's Included
+8. Portfolio
+9. Related Services
+10. Social Proof
+11. Mini Case Study
+12. FAQ
+13. Final CTA + Footer

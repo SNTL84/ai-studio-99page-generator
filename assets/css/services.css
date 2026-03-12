@@ -1,0 +1,55 @@
+:root {
+    --primary: #1E40AF;
+    --accent: #F59E0B;
+    --text: #111827;
+    --bg: #FFFFFF;
+    --gray-light: #F8FAFC;
+    --whatsapp: #25D366;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; color: var(--text); line-height: 1.6; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+section { padding: 80px 0; }
+h1, h2, h3 { font-weight: 700; margin-bottom: 20px; }
+
+.btn { display: inline-block; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: transform 0.2s; }
+.btn:hover { transform: translateY(-2px); }
+.btn-primary { background: var(--primary); color: white; }
+.btn-whatsapp { background: var(--whatsapp); color: white; margin-left: 10px; }
+
+.hero { background: var(--gray-light); text-align: center; padding: 120px 0; }
+.hero h1 { font-size: 3.5rem; }
+.hero .headline { font-size: 1.5rem; color: var(--primary); margin-bottom: 10px; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.card { background: white; padding: 30px; border-radius: 12px; border: 1px solid #e5e7eb; }
+
+.process .flowchart { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.process .step { flex: 1; min-width: 150px; text-align: center; }
+.process .step span { display: block; width: 40px; height: 40px; background: var(--primary); color: white; border-radius: 50%; margin: 0 auto 10px; line-height: 40px; font-weight: 700; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { text-align: left; padding: 15px; border-bottom: 1px solid #e5e7eb; }
+th { background: var(--gray-light); }
+
+.feature-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; list-style: none; }
+.feature-list li::before { content: '✓'; color: var(--whatsapp); font-weight: bold; margin-right: 10px; }
+
+.portfolio img { width: 100%; height: 250px; object-fit: cover; border-radius: 8px; margin-bottom: 10px; }
+
+.stat { text-align: center; background: var(--primary); color: white; padding: 40px; border-radius: 12px; }
+
+.faq .accordion .item { border-bottom: 1px solid #e5e7eb; padding: 15px 0; cursor: pointer; }
+.faq .question { font-weight: 600; position: relative; }
+.faq .answer { display: none; padding-top: 10px; color: #4b5563; }
+.faq .item.active .answer { display: block; }
+
+.final-cta { background: var(--text); color: white; text-align: center; }
+.final-cta .pricing { font-size: 1.2rem; margin: 20px 0; color: var(--accent); }
+
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    .feature-list { grid-template-columns: 1fr; }
+    .process .flowchart { flex-direction: column; }
+}
